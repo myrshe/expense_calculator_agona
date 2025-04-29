@@ -1,0 +1,36 @@
+.main-expense-tracker {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-statistic {
+    overflow-y: auto;
+    background-color: /*#5B4E55*/ #706f8b;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.satistic-cotainer {
+    background-color: /*#F5F4FA*/ #E1FDFE;
+    margin: 4rem;
+    border-radius: 35px;
+    padding: 2rem;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.section-list {
+    background-color: #8097B7;
+    overflow-y: auto;
+    max-height: 100vh;
+    height: 100%;
+}
+
+.list-container {
+    padding: 3vw;
+    height: auto;
+}

@@ -5,7 +5,7 @@ import {deleteExpense} from "../store/expensesSlice.ts";
 import React from "react";
 
 
-const ExpenseMain: React.FC = () => {
+const SectionList: React.FC = () => {
     const dispatch : AppDispatch = useDispatch();
     const expenses = useSelector((state: RootState) => state.expenses.expenses)
 
@@ -14,6 +14,9 @@ const ExpenseMain: React.FC = () => {
         dispatch(deleteExpense(id))
     };
 
+    if (expenses.length === 0) {
+        return <main><p>Add your first Expense!</p></main>
+    }
     return (
         <main>
             {expenses.map((expense) => (
@@ -24,4 +27,4 @@ const ExpenseMain: React.FC = () => {
 }
 
 
-export default ExpenseMain
+export default SectionList
