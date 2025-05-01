@@ -9,9 +9,20 @@ h1 {
 }
 
 .section-statistic {
-    height: 80%;
-    padding: 10%;
+    background-color: #706f8b/* #706f8b*/;
+    padding: 5%;
 }
+
+.statistic-container {
+    background-color: #F5F4FA /*#E1FDFE*/;
+    margin: 4rem;
+    border-radius: 35px;
+    padding: 2rem;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+
 
 .p-sidebar {
     margin-top: 2rem;

@@ -16,16 +16,18 @@ const SectionStatistic: React.FC = () => {
     const maxExpense = isExpenses ? Math.max(...expenses.map(expense => expense.amount)) : '-'
 
     return (
-        <aside className="sidebar">
-            <h1>Expenses calculator</h1>
-            <div className="container-sidebar-p">
-                <p className="p-sidebar">Number of expenses: {expenses.length}</p>
-                <p className="p-sidebar">Total expenses: {totalExpense} $</p>
-                <p className="p-sidebar">Min expenses: {minExpense} $</p>
-                <p className="p-sidebar">Max expenses: {maxExpense} $</p>
+        <section className="section-statistic">
+            <div className="statistic-container">
+                <h1>Expenses calculator</h1>
+                <div className="container-sidebar-p">
+                    <p className="p-sidebar">Number of expenses: {expenses.length}</p>
+                    <p className="p-sidebar">Total expenses: {totalExpense} $</p>
+                    <p className="p-sidebar">Min expenses: {minExpense} $</p>
+                    <p className="p-sidebar">Max expenses: {maxExpense} $</p>
+                </div>
+                <ExpenseForm/>
             </div>
-            <ExpenseForm/>
-        </aside>
+        </section>
     );
 }
 
