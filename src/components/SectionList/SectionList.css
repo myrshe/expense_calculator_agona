@@ -1,0 +1,7 @@
+.section-list {
+    background-color: #8097B7;
+    overflow-y: auto;
+    max-height: 100vh;
+    padding: 3vw;
+    height: auto;
+}

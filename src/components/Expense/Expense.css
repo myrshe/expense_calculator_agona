@@ -1,0 +1,39 @@
+.div-expense {
+    width: 63vw;
+    background-color: #706f8b;
+    border-radius: 15px;
+    height: 15vh;
+    margin-bottom: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.div-expense strong {
+    color: #211828;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-left: 2vw;
+}
+
+.div-expense small {
+    color: #49273f;
+    font-size: clamp(2rem, 3vh, 2rem)
+}
+
+.div-expense button {
+    padding: 10px;
+    border:none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: /*#4f1f1b*/ #77080e;
+    color: #f5f4fa;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.div-expense button:hover {
+    background-color: /*#390b03*/ #570210;
+}

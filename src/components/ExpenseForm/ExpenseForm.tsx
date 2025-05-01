@@ -3,6 +3,7 @@ import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {addExpense} from "../store/expensesSlice.ts";
 import {AppDispatch} from "../store/store.ts";
+import './ExpenseForm.css'
 
 
 const ExpenseForm: React.FC = () => {
@@ -21,9 +22,9 @@ const ExpenseForm: React.FC = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="expense-form">
             <div>
-                <label>Title: </label>
+                <label>Title:</label>
                 <input
                     type="text"
                     value={title}
@@ -31,14 +32,14 @@ const ExpenseForm: React.FC = () => {
                 />
             </div>
             <div>
-                <label>Amount: </label>
+                <label>Amount:</label>
                 <input
                     type="number"
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
                 />
             </div>
-            <button type="submit">add</button>
+            <button type="submit">Add</button>
         </form>
     );
 

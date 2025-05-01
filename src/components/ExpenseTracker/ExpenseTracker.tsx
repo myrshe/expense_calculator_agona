@@ -1,15 +1,16 @@
 
-import ExpenseHeader from "../ExpenseHeader/ExpenseHeader.tsx";
-import ExpenseMain from "../ExpenseMain/ExpenseMain.tsx";
+import SectionStatistic from "../SectionStatistic/SectionStatistic.tsx";
+import SectionList from "../SectionList/SectionList.tsx";
 import React from "react";
+import './ExpenseTracker.css'
 
 const ExpenseTracker: React.FC = () => {
 
     return (
-        <>
-            <ExpenseHeader></ExpenseHeader>
-            <ExpenseMain></ExpenseMain>
-        </>
+        <main className="main-expense-tracker">
+            <SectionStatistic/>
+            <SectionList/>
+        </main>
     );
 };
 
