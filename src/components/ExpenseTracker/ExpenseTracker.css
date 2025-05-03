@@ -6,5 +6,26 @@
     overflow: hidden;
 }
 
+.category-switcher {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 31.2vw;
+}
 
+.category-switcher button {
+    padding: 10px;
+    background-color: /*#4f1f1b*/ #77080e;
+    color: #f5f4fa;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10vw;
+}
+.category-switcher button:hover {
+    background-color: /*#390b03*/ #570210;
+}
 

@@ -1,12 +1,12 @@
 import * as React from "react";
 import {useState} from "react";
 import {useDispatch} from "react-redux";
-import {addExpense} from "../store/expensesSlice.ts";
-import {AppDispatch} from "../store/store.ts";
+import {addExpense} from "../../store/expensesSlice.ts";
+import {AppDispatch} from "../../store/store.ts";
 import './ExpenseForm.css'
 
 
-const ExpenseForm: React.FC = () => {
+const ExpenseForm = () => {
     const [title, setTitle] = useState('');
     const [amount, setAmount] = useState('');
     const dispatch : AppDispatch = useDispatch();
@@ -22,7 +22,7 @@ const ExpenseForm: React.FC = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="expense-form">
+        <form onSubmit={handleSubmit}>
             <div>
                 <label>Title:</label>
                 <input

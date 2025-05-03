@@ -1,6 +1,6 @@
 import {Expense as ExpenseType} from "./Expense.ts";
 import React from "react";
-import "./Expense.css"
+import "../index.css"
 
 
 interface ExpenseProps {
@@ -12,9 +12,9 @@ interface ExpenseProps {
 const Expense: React.FC<ExpenseProps> = ({expense, onDelete}) => {
 
     return (
-        <div className="div-expense">
+        <div className="item-card">
                 <strong>{expense.title}</strong>
-            <div className="div-expense-botton">
+            <div>
                     <small>{expense.amount}$</small>
                 {onDelete && (
                     <button onClick={() => onDelete(expense.id)}>Удалить</button>

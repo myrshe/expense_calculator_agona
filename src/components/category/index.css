@@ -1,4 +1,4 @@
-.div-expense {
+.item-card {
     width: 63vw;
     background-color: #706f8b;
     border-radius: 15px;
@@ -10,18 +10,18 @@
 
 }
 
-.div-expense strong {
+.item-card strong {
     color: #211828;
     font-size: clamp(2rem, 5vw, 3rem);
     margin-left: 2vw;
 }
 
-.div-expense small {
+.item-card small {
     color: #49273f;
     font-size: clamp(2rem, 3vh, 2rem)
 }
 
-.div-expense button {
+.item-card button {
     padding: 10px;
     border:none;
     border-radius: 7px;
@@ -34,6 +34,18 @@
     margin-right: 2vw;
 }
 
-.div-expense button:hover {
+.item-card button:hover {
     background-color: /*#390b03*/ #570210;
+}
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-footer input{
+    cursor: pointer;
+    accent-color: #5b837b;
+    width: 5vw;
+    height: 5vh;
 }
