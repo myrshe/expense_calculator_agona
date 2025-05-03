@@ -1,10 +1,13 @@
-import {configureStore} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import expensesReducer from './expensesSlice';
-
+import booksReducer from './bookSlice';
+import moviesReducer from './movieSlice';
 
 export const store = configureStore({
     reducer: {
         expenses: expensesReducer,
+        books: booksReducer,
+        movies: moviesReducer,
     },
 });
 

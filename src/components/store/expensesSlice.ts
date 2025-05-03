@@ -1,4 +1,4 @@
-import  {Expense as ExpenseType} from "../Expense/Expense.ts";
+import {Expense as ExpenseType} from "../category/Expense/Expense.ts";
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
