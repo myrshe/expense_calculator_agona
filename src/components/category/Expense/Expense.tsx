@@ -17,7 +17,7 @@ const Expense: React.FC<ExpenseProps> = ({expense, onDelete}) => {
             <div>
                     <small>{expense.amount}$</small>
                 {onDelete && (
-                    <button onClick={() => onDelete(expense.id)}>Удалить</button>
+                    <button onClick={() => onDelete(expense.id)}>Delete</button>
                 )}
             </div>
         </div>

@@ -10,7 +10,7 @@ const initialState : ExpensesState = {
     expenses: [
         {
             id: Date.now(),
-            title: "беспроводная мышка",
+            title: "wireless mouse",
             amount: 5999
         }
     ]

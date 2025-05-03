@@ -25,7 +25,7 @@ const Movie : React.FC<MovieProps> = ({movie, onDelete}) => {
 
 
                 {onDelete && (
-                    <button onClick={() => onDelete(movie.id)}>Удалить</button>
+                    <button onClick={() => onDelete(movie.id)}>Delete</button>
                 )}
             </div>
         </div>

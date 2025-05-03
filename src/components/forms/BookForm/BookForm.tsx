@@ -33,7 +33,7 @@ const BookForm = () => {
                 <label>Author:</label>
                 <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)}/>
             </div>
-            <button type="submit">Добавить</button>
+            <button type="submit">Add</button>
         </form>
     );
 };

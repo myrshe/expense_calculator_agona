@@ -11,9 +11,9 @@ const ExpenseTracker: React.FC = () => {
     return (
         <main className="main-expense-tracker">
             <div className="category-switcher">
-                <button onClick={() => setCurrentCategory('expenses')}>Расходы</button>
-                <button onClick={() => setCurrentCategory('books')}>Книги</button>
-                <button onClick={() => setCurrentCategory('movies')}>Фильмы</button>
+                <button onClick={() => setCurrentCategory('expenses')}>Expenses</button>
+                <button onClick={() => setCurrentCategory('books')}>Books</button>
+                <button onClick={() => setCurrentCategory('movies')}>Movies</button>
             </div>
             <SectionStatistic category={currentCategory} />
             <SectionList category={currentCategory} />

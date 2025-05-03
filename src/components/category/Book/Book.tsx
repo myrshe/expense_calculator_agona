@@ -22,7 +22,7 @@ const Book : React.FC<BookProps> = ({book, onDelete}) => {
                 onChange={() => dispatch(toggleRead(book.id))}>
                 </input>
 
-                <button onClick={() => onDelete?.(book.id)}>Удалить</button>
+                <button onClick={() => onDelete?.(book.id)}>Delete</button>
             </div>
         </div>
     );
